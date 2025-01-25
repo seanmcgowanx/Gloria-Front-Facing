@@ -16,32 +16,90 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../global.css">
     <!--Script-->
-    <script type="module" src=".../global.js"></script>
+    <script type="module" src="../global.js"></script>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="branding-header">
-            <a href="../index.html">
-                <img alt="gloria logo" src="../icons/logo.png">
-            </a>
+            <a href="../index.html"><img class="logo" alt="gloria logo" src="../images/logo.png"></a>
         </div>
-        <div class-="nav">
-            <a href="#footer">Contact</a>
-            <a href="./pages/demo.html">Book Demo</a>            
-            <a href="./pages/about.html">About</a> 
-            <a href="./pages/about.html">FAQ</a>
-            <i class="fa-solid fa-bars" id="menu-button"></i>
+        <div class="nav">
+            <a class="nav-item" href="#footer">Contact</a>
+            <a class="nav-item" href="./demo.html">Book Demo</a>            
+            <a class="nav-item" href="./about.html">About</a> 
+            <a class="nav-item" href="../index.html#faq-section">FAQ</a>
+
         </div>
+        <i class="fa-solid fa-bars" id="menu-button"></i>
         <!-- Hidden Menu-->
         <div id="menu">
-            <i class="fa-solid fa-arrow-left back-arrow" id="back-arrow"></i>
- 
+            <a class="menu-item" href="../index.html">Home</a>
+            <a class="menu-item" href="#footer">Contact</a>
+            <a class="menu-item" href="./demo.html">Book Demo</a>            
+            <a class="menu-item" href="./about.html">About</a> 
+            <a class="nav-item" href="../index.html#faq-section">FAQ</a>
         </div>
     </header>
-    <h1>Policy Page</h1>
-    <!--Footer-->
+
+    
+    <!-- Policy Section -->
+    <div class="policy-section">
+        <h1 class="policy-header">Privacy Policy</h1>
+        <p class="policy-text">
+            This privacy policy explains how Gloria ("we," "our," or "us") collects, uses, and protects any information you provide when you use our website. Gloria is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified, you can be assured that it will only be used in accordance with this privacy statement.
+            <br><br>
+            Gloria may update this policy from time to time by amending this page. Please check this page periodically to ensure you are happy with any changes. This policy is effective as of 01.25.25 and last updated 01.25.25.
+        </p>
+        <p class="policy-header">Information We Collect</p>
+        <p class="policy-text">
+            We may collect the following information when you request a demo of our product:
+        </p>
+        <ul class="policy-text">
+            <li>First and last name</li>
+            <li>Email address</li>
+            <li>Company name and description</li>
+        </ul>
+        <p class="policy-header">How We Use the Information</p>
+        <p class="policy-text">
+            We collect this information to understand your needs and provide you with a better service, specifically for the following purposes:
+        </p>
+        <ul class="policy-text">
+            <li>To process and respond to demo requests.</li>
+            <li>To maintain internal records.</li>
+            <li>To improve our products and services.</li>
+            <li>To communicate with you regarding your inquiry or demo request.</li>
+        </ul>
+        <p class="policy-header">Sharing Your Information</p>
+        <p class="policy-text">We will not sell, distribute, or lease your personal information to third parties unless we have your permission or are required to do so by law. We may share your information with trusted third-party partners solely to provide services related to your demo request or inquiry.</p>
+        <p class="policy-header">Security</p>
+        <p class="policy-text">We are committed to ensuring that your personal information is secure. To prevent unauthorized access or disclosure, we have implemented suitable physical, electronic, and managerial procedures to safeguard the information we collect online.</p>
+        <p class="policy-header">Links to Other Websites</p>
+        <p class="policy-text">Our website may contain links to other websites. However, once you leave our site, we do not have control over external websites. We are not responsible for the protection and privacy of any information you provide while visiting such sites, and such sites are not governed by this privacy statement. We encourage you to review the privacy policies of any external websites you visit.</p>
+        <p class="policy-header">Controlling Your Personal Information</p>
+        <p class="policy-text">You may choose to restrict the collection or use of your personal information in the following ways:</p>
+        <ul class="policy-text">
+            <li>Contact us at <a class="policy-email" href="mailto:info@gloria.io">info@gloria.io</a> if you wish to update, correct, or delete your personal information.</li>
+        </ul>
+    </div>
+    
+    <!-- Footer -->
     <footer id="footer">
-        
-    </footer>
-</body>
+        <div class="contact">
+            <p class="footer-header">Contact</p>
+            <span class="footer-item">
+                <i class="fa-solid fa-phone"></i>
+                <p><a href="tel:+18084303271">(562)-447-0935</a></p>
+            </span>
+            <span class="footer-item">
+                <i class="fa-solid fa-envelope"></i>
+                <p><a href="mailto:info@gloria.io">info@gloria.io</a></p>
+            </span>
+        </div>
+        <div class="our-company">
+            <p class="footer-header">Our Company</p>
+            <p class="footer-item"><a href="./policy.html">Privacy Policy</a></p>
+        </div>
+    </footer>    
+</body>   
+</html>
