@@ -141,7 +141,7 @@ header {
 .menu-item {
     font-size: 1.1rem;
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 #menu.visible {
@@ -333,6 +333,8 @@ footer {
 .our-story-text {
     padding: 1rem 2rem;
     line-height: 1.5;
+    font-weight: 300;
+    font-size: 1.2rem;
 }
 
 /* Our Team Section - About.html */
@@ -384,10 +386,11 @@ header {
   
   .nav {
       display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   
   .nav-item {
-      padding: 0 1rem;
+      padding: 0 2rem;
       font-size: 1.1rem;
   }
   
