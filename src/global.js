@@ -14,7 +14,6 @@ menuButton.addEventListener('click', () => {
 menuItems.forEach((item) => {
     item.addEventListener("click", () => {
         menu.classList.toggle('visible'); // Toggle Menu
-        console.log('toggled');
     })
 })
 

@@ -16,32 +16,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../global.css">
     <!--Script-->
-    <script type="module" src=".../global.js"></script>
+    <script type="module" src="../global.js"></script>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="branding-header">
-            <a href="../index.html">
-                <img alt="gloria logo" src="../icons/logo.png">
-            </a>
+            <a href="../index.html"><img class="logo" alt="gloria logo" src="../images/logo.png"></a>
         </div>
-        <div class-="nav">
-            <a href="#footer">Contact</a>
-            <a href="./demo.html">Book Demo</a>            
-            <a href="./about.html">About</a> 
-            <a href="./pages/about.html">FAQ</a>
-            <i class="fa-solid fa-bars" id="menu-button"></i>
+        <div class="nav">
+            <a class="nav-item" href="../index.html">Home</a>
+            <a class="nav-item" href="#footer">Contact</a>
+            <a class="nav-item" href="./demo.html">Book Demo</a>            
+            <a class="nav-item" href="./about.html">About</a> 
+            <a class="nav-item" href="../index.html#faq-section">FAQ</a>
+
         </div>
+        <i class="fa-solid fa-bars" id="menu-button"></i>
         <!-- Hidden Menu-->
         <div id="menu">
-            <i class="fa-solid fa-arrow-left back-arrow" id="back-arrow"></i>
- 
+            <a class="menu-item" href="../index.html">Home</a>
+            <a class="menu-item" href="#footer">Contact</a>
+            <a class="menu-item" href="./demo.html">Book Demo</a>            
+            <a class="menu-item" href="./about.html">About</a> 
+            <a class="nav-item" href="../index.html#faq-section">FAQ</a>
         </div>
     </header>
-    <h1>About Page</h1>
-    <!--Footer-->
+
+    <!-- Our Story Section -->
+    <div class="our-story-section">
+        <h1 class="about-section-header">Our Story</h1>
+        <p class="our-story-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis turpis in velit ullamcorper, nec condimentum magna consequat. Proin nec eros nec felis viverra vehicula. Aliquam erat volutpat. Nam sollicitudin dolor id felis ultricies, eget egestas nulla fermentum. 
+            <br><br>
+            Sed laoreet mi sit amet enim tincidunt, vel sollicitudin purus sollicitudin. In fermentum libero et nunc tempus fermentum. Ut scelerisque justo id velit luctus, vel dictum elit facilisis. Nunc malesuada eu turpis sit amet dictum. Nulla et orci in justo dignissim euismod at nec felis.</p>
+    </div>
+
+    <!-- Our Team Section -->
+    <div class="our-team-section">
+        <h1 class="about-section-header">Our Team</h1>
+        <div class="team-member-flex">
+            <div class="team-member">
+                <div class="avatar"></div>
+                <p class="name">David Vacchio</p>
+                <p class="title">CEO</p>
+            </div>
+            <div class="team-member">
+                <img class="avatar" alt="team-member" src="../images/okwi.jpg">
+                <p class="name">Okwi Ahiligwo</p>
+                <p class="title">CTO / Backend Developer</p>
+            </div>
+            <div class="team-member">
+                <img class="avatar" alt="team-member" src="../images/rich.jpg">
+                <p class="name">Rich Bihomora</p>
+                <p class="title">CMO / Frontend Developer</p>
+            </div>
+            <div class="team-member">
+                <img class="avatar" alt="team-member" src="../images/sean.jpg">
+                <p class="name">Sean McGowan</p>
+                <p class="title">CFO / Frontend Developer</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
     <footer id="footer">
-        
-    </footer>
-</body>
+        <div class="contact">
+            <p class="footer-header">Contact</p>
+            <span class="footer-item">
+                <i class="fa-solid fa-phone"></i>
+                <p><a href="tel:+18084303271">(562)-447-0935</a></p>
+            </span>
+            <span class="footer-item">
+                <i class="fa-solid fa-envelope"></i>
+                <p><a href="mailto:info@gloria.io">info@gloria.io</a></p>
+            </span>
+        </div>
+        <div class="our-company">
+            <p class="footer-header">Our Company</p>
+            <p class="footer-item"><a href="./policy.html">Privacy Policy</a></p>
+        </div>
+    </footer>    
+</body>   
+</html>
