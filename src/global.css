@@ -400,16 +400,25 @@ footer {
 .demo input,
 .demo select {
     width: 100%;
-    padding: 1rem; 
+    padding: 1rem;
     margin-bottom: 1.5rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1rem; 
+    font-size: 1rem;
     color: #333;
     box-sizing: border-box;
     -webkit-appearance: none; /* For iOS */
     -moz-appearance: none; /* For Firefox */
     appearance: none; /* For other browsers */
+    background-color: white; /* Optional: Ensures consistent background color */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+/* Custom arrow added for select element */
+.demo select {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M7%2010l5%205%205-5H7z%22%2F%3E%3C%2Fsvg%3E'); /* Down arrow */
 }
 
 .demo input:focus,
