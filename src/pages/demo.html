@@ -43,6 +43,44 @@
     </header>
 
     <!-- Form Section -->
+    <form class="demo" action="/submit" method="POST">
+        <h1>See Gloria in Action</h1>
+        <p>We'd love to offer your clients peace of mind</p>
+        <label for="first-name" id="first-name-label">First name *</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" 
+                aria-required="true" aria-labelledby="first-name-label" required title="Please enter your first name." />
+        
+        <label for="last-name" id="last-name-label">Last name *</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" 
+                aria-required="true" aria-labelledby="last-name-label" required />
+        
+        <label for="email" id="email-label">Business Email *</label>
+        <input type="email" id="email" name="email" placeholder="Enter your business email" 
+                aria-required="true" aria-labelledby="email-label" required />
+        <label for="company-type" id="company-type-label">Which best describes your company? *</label>
+        <select id="company-type" name="company-type" aria-required="true" aria-labelledby="company-type-label" required>
+            <option value="" disabled selected>Select a company type</option>
+            <option value="Independent Living">Independent Living</option>
+            <option value="Assisted Living">Assisted Living</option>
+            <option value="Memory Care">Memory Care</option>
+            <option value="In-Home Care">In-Home Care</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="hear-about" id="hear-about-label">How did you hear about us? *</label>
+        <input type="text" id="hear-about" name="hear-about"
+                aria-required="true" aria-labelledby="hear-about-label" required />
+        
+        <label for="help-you" id="help-you-label">How can we help you?</label>
+        <input type="text" id="hear-about" name="hear-about"
+        aria-required="true" aria-labelledby="hear-about-label" required />
+        <button type="submit" id="submit" aria-label="Submit Form">Submit</button>
+        <p class="terms">
+            By clicking Submit, you agree to our
+            <a href="./policy.html"><u>Privacy Policy</u></a>.
+        </p>
+    </form>
+
+
     
     <!-- Footer -->
     <footer id="footer">

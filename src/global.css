@@ -188,7 +188,7 @@ footer {
 .hero-section button {
     font-size: 1.1rem;
     background: linear-gradient(var(--color-3), var(--color-secondary));
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
 .fa-diagram-project {
@@ -365,6 +365,78 @@ footer {
     font-weight: 300;
     margin-top: 5px;
     font-size: 0.8em;
+}
+
+
+/***  DEMO.HTML STYLES ***/
+
+/* Form Section */
+
+.demo {
+    margin: 0 auto;
+    padding: 2rem 2rem 5rem 2rem;
+}
+
+.demo h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.demo p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.demo label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+    display: block;
+}
+
+.demo input,
+.demo select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: .9em;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.demo input:focus,
+.demo select:focus {
+    border-color: var(--color-3);
+    outline: none;
+}
+
+.demo button {
+    padding: 0.7rem 4rem;
+    font-size: 16px;
+    background: linear-gradient(var(--color-3), var(--color-secondary));
+    color: #FFFFFF;
+    display: block;
+    margin: auto;
+}
+
+.demo .terms {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 1.5rem;
+}
+
+.demo .terms a {
+    text-decoration: none;
+}
+
+.demo .terms a:hover {
+    text-decoration: underline;
 }
 
   
