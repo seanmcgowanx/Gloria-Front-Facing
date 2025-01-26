@@ -10,14 +10,21 @@ const logo = document.getElementById('logo');
 
 menuButton.addEventListener('click', () => {
   menu.classList.toggle('visible'); // Toggle Menu
-  logo.classList.toggle('fixed');  // Fix logo in Menu
+  logo.classList.toggle('fixed');  // Toggle fixed logo in Menu
 });
 
 menuItems.forEach((item) => {
     item.addEventListener("click", () => {
-        menu.classList.toggle('visible'); // Toggle Menu
+        menu.classList.toggle('visible'); // Toggle Menu when Menu Item is clicked
     })
 })
+
+document.addEventListener('click', (event) => {
+    if (menu.classList.contains('visible') && isClickOutsideMenu(event)) {
+      menu.classList.remove('visible'); // Close menu when clicking outside
+      logo.classList.remove('fixed');  // Reset logo position
+    }
+  });
 
 questions.forEach((question) => {
     question.addEventListener("click", () => {
@@ -33,4 +40,11 @@ questions.forEach((question) => {
         }
     });
 });
+
+//Helper Functions
+
+// Function to check if click is outside the menu
+function isClickOutsideMenu(event) {
+    return !menu.contains(event.target) && event.target !== menuButton;
+  }
 
