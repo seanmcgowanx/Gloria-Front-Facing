@@ -64,16 +64,27 @@
         </div>
     </div>
 
-    <!-- Photo Section  -->
-    <div class="photo-section">
+    <!-- Photo Section -->
+<div class="photo-section">
+    <picture>
+        <!-- WebP format for browsers that support it -->
+        <source srcset="./images/care-image.webp" type="image/webp">
+        <!-- Fallback for browsers that do not support WebP -->
         <img class="care-image" alt="elderly care image" src="./images/care-image.jpg" hidden>
+    </picture>
+    <picture>
+        <!-- WebP format for mobile images -->
+        <source srcset="./images/care-image-mobile.webp" type="image/webp">
+        <!-- Fallback for mobile images -->
         <img class="care-image-mobile" alt="elderly care image" src="./images/care-image-mobile.jpg">
-        <p class="photo-section-text">
-            We bridge the gap between home and family. Join the familes and caregivers who trust Gloria to simplify communication and provide better care for their loved ones
-            <br><br>
-            <a>Join Us Today!</a>
-        </p>
-    </div>
+    </picture>
+    <p class="photo-section-text">
+        We bridge the gap between home and family. Join the families and caregivers who trust Gloria to simplify communication and provide better care for their loved ones
+        <br><br>
+        <a>Join Us Today!</a>
+    </p>
+</div>
+
 
     <!-- FAQ Section  -->
      <div class="faq-section" id="faq-section">
