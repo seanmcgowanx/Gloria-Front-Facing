@@ -12,13 +12,14 @@ const heroHeader = document.querySelector('.hero-header')
 
 menuButton.addEventListener('click', () => {
   menu.classList.toggle('visible'); // Toggle Menu
-  logo.classList.toggle('fixed'); // Toggle fixed position of logo
+  logo.classList.toggle('fixed'); // Toggle fixed position of Logo
 });
 
 
 menuItems.forEach((item) => {
     item.addEventListener("click", () => {
         menu.classList.toggle('visible'); // Toggle Menu when Menu Item is clicked
+        logo.classList.toggle('fixed'); // Toggle fixed position of Logo when Menu Item is clicked
     })
 })
 
