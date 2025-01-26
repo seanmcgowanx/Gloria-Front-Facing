@@ -89,6 +89,10 @@
       height: 2rem;
     }
 
+  .fixed {
+    position: fixed;
+  }
+
 /*** GLOBAL STYLES ***/
 
 /* Header - Global */
@@ -102,7 +106,6 @@ header {
 
 .logo {
     width: 40px;
-    position: relative;
     z-index: 2;
 }
 
@@ -428,7 +431,6 @@ footer {
 }
 
 .demo button {
-    padding: 0.7rem 4rem;
     font-size: 16px;
     background: linear-gradient(var(--color-3), var(--color-secondary));
     color: #FFFFFF;

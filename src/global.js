@@ -3,12 +3,14 @@ const menuButton = document.getElementById('menu-button');
 const menu = document.getElementById('menu');
 const questions = document.querySelectorAll(".question");
 const menuItems = document.querySelectorAll(".menu-item");
+const logo = document.getElementById('logo');
 
 
 // Event Listeners
 
 menuButton.addEventListener('click', () => {
   menu.classList.toggle('visible'); // Toggle Menu
+  logo.classList.toggle('fixed');  // Fix logo in Menu
 });
 
 menuItems.forEach((item) => {
