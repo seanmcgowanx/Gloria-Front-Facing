@@ -3,10 +3,10 @@
 :root {
     --font-primary: 'Inter', sans-serif;
     --font-secondary: "Comfortaa", serif;
-    --color-primary: #000000;
+    --color-primary: #333;
     --color-secondary: #FF3C00;
     --color-3: #FF7400;
-    --text-color: #000000;
+    --text-color: #333;
   }
   
 /* Reset - Setup */
@@ -88,6 +88,10 @@
   .h-2 {
       height: 2rem;
     }
+
+  .indent {
+    text-indent: 50px;
+  }
 
 /*** GLOBAL STYLES ***/
 
@@ -200,6 +204,7 @@ footer {
     display: block;
     text-align: center;
     margin-top: 2rem;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 /* Features Section - Index.html */
@@ -217,7 +222,6 @@ footer {
 
 .photo-section {
     position: relative;
-    margin-bottom: 3rem;
 }
 
 .care-image-mobile {
@@ -253,7 +257,7 @@ footer {
 /* FAQ Section - Index.html */
 
 .faq-section {
-    padding: 1rem;
+    padding: 3rem 1rem;
     margin-bottom: 3rem;
 }
   
@@ -305,6 +309,7 @@ footer {
 }
 
 .policy-section h1 {
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -329,22 +334,25 @@ footer {
 
 .about-section-header {
     text-align: center;
-    margin: 2rem 0;
+    font-size: 1.5rem;
 }
 
 /* Our Story Section - About.html */
+
+.our-story-section {
+    padding: 1rem 0 3rem 0;
+}
 
 .our-story-text {
     padding: 1rem 2rem;
     line-height: 1.5;
     font-weight: 300;
-    font-size: 1.2rem;
 }
 
 /* Our Team Section - About.html */
 
 .our-team-section {
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
 .team-member {
@@ -352,9 +360,18 @@ footer {
     padding: 1rem 0;
 }
 
+.team-member-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
 .avatar {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin: auto;
@@ -378,7 +395,7 @@ footer {
 
 .demo {
     margin: 0 auto;
-    padding: 2rem 2rem 5rem 2rem;
+    padding: 2rem 2rem 3rem 2rem;
 }
 
 .demo h1 {
@@ -391,7 +408,7 @@ footer {
     text-align: center;
     font-size: 1rem;
     color: #555;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .demo label {
@@ -420,8 +437,8 @@ footer {
     background-size: 16px;
 }
 
-/* Custom arrow added for select element */
-.demo select {
+
+.demo select {/* Custom arrow added for select element */
     background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M7%2010l5%205%205-5H7z%22%2F%3E%3C%2Fsvg%3E'); /* Down arrow */
 }
 
@@ -432,11 +449,12 @@ footer {
 }
 
 .demo button {
+    padding: 0.5rem 3rem;
     font-size: 16px;
     background: linear-gradient(var(--color-3), var(--color-secondary));
     color: #FFFFFF;
     display: block;
-    margin: auto;
+    margin: 1rem auto;
 }
 
 .demo .terms {
@@ -509,8 +527,12 @@ header {
     align-items: center;
     width: 90%;
     margin: auto;
-    padding: 3rem 0;
+    padding: 7rem 0;
 }  
+
+.center {
+    margin-right: 1rem;
+}
 
 .hero-header {
     font-size: 3.5rem;
@@ -542,13 +564,12 @@ header {
 
 .care-image {
     width: 90%;
-    padding-top: 5rem;
     display: block;
     margin: auto;
 }
 
 .photo-section p {
-    top: 5rem;
+    top: 0;
     left: 10%;
     bottom: 0;
     padding: 4rem 2rem;
@@ -558,9 +579,15 @@ header {
 /* FAQ Section - Index.html -Desktop 1024 */
 
 .faq-section {
-    width: 800px;
-    margin: 5rem auto 5rem auto;
+    max-width: 950px;
+    padding: 7rem 0;
+    margin: auto;
     font-size: 1.1rem;
+}
+
+.faq-header {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
 }
 
 }  
@@ -572,8 +599,11 @@ header {
 /* Policy Section - Policy.html - Desktop 1024 */
 
 .policy-section {
-    width: 50%;
+    width: 60%;
+    min-width: 50rem;
+    max-width: 70rem;
     margin: auto;
+    padding-top: 5rem;
 }
 
 .policy-section h1 {
@@ -591,13 +621,22 @@ header {
 
 /* Our Story Section - Desktop 1024 */    
 
+.our-story-section {
+    padding: 5rem 0;
+}
+
 .our-story-text {
-    width: 50%;
+    width: 50rem;
     margin: auto;
     line-height: 2.0;
+    font-size: 1.2rem;
 }
 
 /* Our Team Section - Desktop 1024 */
+
+.our-team-section {
+    padding-bottom: 7rem;
+}
 
 .team-member-flex {
     display: flex;
@@ -609,5 +648,50 @@ header {
 
 .team-member {
     padding: 2rem;
+}
+
+.avatar {
+    height: 200px;
+    width: 200px;
+}
+}
+
+/* MEDIA QUERIES - DEMO.HTML */
+
+/* Form Section - Demo.HTML */
+
+@media (min-width: 1024px) {
+
+.demo {
+    padding-top: 4rem;
+}
+
+.demo-form-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 45rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+.demo-flex-item {
+    flex: 1 1 calc(50% - 1rem); /* Flex-basis for half-width items */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+}
+
+.demo-flex-item.full-width {
+    flex: 1 1 100%; /* Full-width elements */
+}
+
+.demo input, .demo select {
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
 }
 }
