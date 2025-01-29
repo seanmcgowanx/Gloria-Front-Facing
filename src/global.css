@@ -221,6 +221,7 @@ header {
     width: 34px;
     -webkit-user-drag: none; /* For Safari */
     pointer-events: none; /* For other browsers */
+    user-select: none;
 }
 
 .logo-text {
