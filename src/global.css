@@ -601,7 +601,6 @@ margin-right: 0rem;
 .policy-header {
     margin-bottom: 1rem;
     font-weight: 500;
-    padding-top: 1rem;
 }
 
 .policy-text {
@@ -625,11 +624,11 @@ margin-right: 0rem;
     min-width: 50rem;
     max-width: 70rem;
     margin: auto;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .policy-section h1 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .policy-text {
