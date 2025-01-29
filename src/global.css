@@ -811,6 +811,23 @@ margin-right: 0rem;
     text-decoration: underline;
 }
 
+.demo-flex-item {
+    position: relative;
+}
+
+input.error {
+    border: 1px solid var(--color-secondary);
+}
+
+.error-message {
+    display: none;
+    color: var(--color-secondary);
+    position: absolute;
+    top: 78px;
+    left: 20px;
+    font-size: 12px;
+}
+
 /* MEDIA QUERIES - DEMO.HTML */
 
 /* Form Section - Demo.HTML - Desktop 1024 */
@@ -852,5 +869,10 @@ margin-right: 0rem;
 
 .full-width {
     width: 100%;
+}
+
+.error-message {
+    font-size: 14px;
+    top: 84px;
 }
 }

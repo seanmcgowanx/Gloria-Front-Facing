@@ -49,7 +49,7 @@
             <a class="menu-item" href="./demo.html">Get a Demo</a>            
         </div>
     </header>
-    
+
 
     <!-- Form Section -->
     <form class="demo" action="/submit" method="POST">
@@ -58,22 +58,57 @@
         <div class="demo-form-flex">
             <div class="demo-flex-item">
                 <label for="first-name" id="first-name-label">First name *</label>
-                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" 
-                       aria-required="true" aria-labelledby="first-name-label" required title="Please enter your first name." />
+                <div class="error-message" ></div>
+                <input 
+                    class="form-control" 
+                    type="text" 
+                    id="first-name" 
+                    name="first-name" 
+                    placeholder="Enter your first name" 
+                    aria-required="true" 
+                    aria-labelledby="first-name-label" 
+                    title="Please enter your first name."
+                    required 
+                />
             </div>
             <div class="demo-flex-item">
                 <label for="last-name" id="last-name-label">Last name *</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" 
-                       aria-required="true" aria-labelledby="last-name-label" required />
+                <input 
+                    class="form-control"
+                    type="text" 
+                    id="last-name" 
+                    name="last-name" 
+                    placeholder="Enter your last name" 
+                    aria-required="true" 
+                    aria-labelledby="last-name-label"
+                    required
+                />
+                <div class="error-message" ></div>
             </div>
             <div class="demo-flex-item">
                 <label for="email" id="email-label">Business Email *</label>
-                <input type="email" id="email" name="email" placeholder="Enter your business email" 
-                       aria-required="true" aria-labelledby="email-label" required />
+                <input 
+                    class="form-control"
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your business email" 
+                    aria-required="true" 
+                    aria-labelledby="email-label" 
+                    required 
+                />
+                <div class="error-message" ></div>
             </div>
             <div class="demo-flex-item">
                 <label for="company-type" id="company-type-label">Which best describes your company? *</label>
-                <select id="company-type" name="company-type" aria-required="true" aria-labelledby="company-type-label" required>
+                <select 
+                    class="form-control"
+                    id="company-type" 
+                    name="company-type" 
+                    aria-required="true" 
+                    aria-labelledby="company-type-label" 
+                    required
+                >
                     <option value="" disabled selected>Select a company type</option>
                     <option value="Independent Living">Independent Living</option>
                     <option value="Assisted Living">Assisted Living</option>
@@ -81,11 +116,20 @@
                     <option value="In-Home Care">In-Home Care</option>
                     <option value="Other">Other</option>
                 </select>
+                <div class="error-message" ></div>
             </div>
             <div class="demo-flex-item full-width">
                 <label for="hear-about" id="hear-about-label">How did you hear about us? *</label>
-                <input type="text" id="hear-about" name="hear-about" 
-                       aria-required="true" aria-labelledby="hear-about-label" required />
+                <input 
+                    class="form-control"
+                    type="text" 
+                    id="hear-about" 
+                    name="hear-about" 
+                    aria-required="true" 
+                    aria-labelledby="hear-about-label" 
+                    required 
+                />
+                <div class="error-message" ></div>
             </div>
             <div class="demo-flex-item full-width">
                 <label for="help-you" id="help-you-label">How can we help you?</label>

@@ -4,7 +4,8 @@ const menu = document.getElementById('menu');
 const questions = document.querySelectorAll(".question");
 const menuItems = document.querySelectorAll(".menu-item");
 const logo = document.getElementById('logo');
-const form = document.querySelector(".demo");
+const formControls = document.querySelectorAll(".form-control");
+const errorMessages = document.querySelectorAll('.error-message');
 
 
 // Event Listeners
@@ -45,6 +46,37 @@ questions.forEach((question) => {
 });
 
 
+formControls.forEach((formControl, index) => {
+  formControl.addEventListener('invalid', (event) => {
+    event.preventDefault();
+
+    const input = event.target;
+
+    input.classList.add('error')
+
+    errorMessages.forEach((errorMessage, errorIndex) => {
+      if (errorIndex === index) {
+        errorMessage.textContent = getCustomMessage(input); // Custom message
+        errorMessage.style.display = 'block'; // Show the error message
+      }
+    });
+  });
+
+  // Listen for changes or input corrections
+  formControl.addEventListener('input', (event) => {
+    const input = event.target;
+
+    if (input.validity.valid) {
+      // Hide error message and remove error class if the input is valid
+      const errorMessage = errorMessages[index];
+      errorMessage.style.display = 'none'; // Hide error message
+      input.classList.remove('error'); // Remove error class from input field
+    }
+  });
+});
+
+
+
 //Helper Functions
 
 // Function to check if click is outside the menu
@@ -52,3 +84,14 @@ questions.forEach((question) => {
 function isClickOutsideMenu(event) {
       return !menu.contains(event.target) && event.target !== menuButton;
     }
+
+// Get custom error message
+
+function getCustomMessage(input) {
+  if (input.id === "first-name") return "First name is required.";
+  if (input.id === "last-name") return "Last name is required.";
+  if (input.id === "email") return "Please enter a valid business email.";
+  if (input.id === "company-type") return "Please select a company type.";
+  if (input.id === "hear-about") return "Please let us know how you heard about us.";
+  return "This field is required.";
+}
