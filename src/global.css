@@ -132,6 +132,9 @@ header span {
 
 .logo-img {
     width: 31px;
+    -webkit-user-drag: none; /* For Safari */
+    pointer-events: none; /* For other browsers */
+    user-select: none;
 }
 
 .logo-text {
@@ -139,6 +142,7 @@ header span {
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-secondary);
+    user-select: none;
 }
 
 .nav {
@@ -219,13 +223,10 @@ header {
     
 .logo-img {
     width: 34px;
-    -webkit-user-drag: none; /* For Safari */
-    pointer-events: none; /* For other browsers */
-    user-select: none;
 }
 
 .logo-text {
-font-size: 2.1rem;
+    font-size: 2.1rem;
 }
     
 .nav {
