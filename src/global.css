@@ -100,8 +100,8 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
-  height: 108px;
+  padding: 1rem 2rem 2rem 2rem;
+  height: 92px;
 }
 
 header span {
