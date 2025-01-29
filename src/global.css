@@ -219,6 +219,8 @@ header {
     
 .logo-img {
     width: 34px;
+    -webkit-user-drag: none; /* For Safari */
+    pointer-events: none; /* For other browsers */
 }
 
 .logo-text {
