@@ -4,8 +4,7 @@ const menu = document.getElementById('menu');
 const questions = document.querySelectorAll(".question");
 const menuItems = document.querySelectorAll(".menu-item");
 const logo = document.getElementById('logo');
-const header = document.querySelector('header');
-const heroHeader = document.querySelector('.hero-header')
+const form = document.querySelector(".demo");
 
 
 // Event Listeners
@@ -45,10 +44,11 @@ questions.forEach((question) => {
     });
 });
 
+
 //Helper Functions
 
 // Function to check if click is outside the menu
+  
 function isClickOutsideMenu(event) {
-    return !menu.contains(event.target) && event.target !== menuButton;
-  }
-
+      return !menu.contains(event.target) && event.target !== menuButton;
+    }

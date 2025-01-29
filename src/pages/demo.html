@@ -19,28 +19,37 @@
     <script type="module" src="../global.js"></script>
 </head>
 <body>
+   
+   
     <!-- Header -->
     <header>
-        <div class="branding-header">
-            <a href="../index.html"><img class="logo" alt="gloria logo" src="../images/logo.png"></a>
+        <div class="branding branding-nav-flex">
+            <a href="../index.html" class="logo" id="logo">
+                <span>
+                    <img class="logo-img" alt="gloria logo" src="../images/logo.png">
+                    <p class="logo-text">Gloria</p>
+                </span>
+            </a>
+            <div class="nav">
+                <a class="nav-item" href="./about.html">About</a> 
+                <a class="nav-item" href="../index.html#faq-section">FAQ</a>
+                <a class="nav-item" href="#footer">Contact</a>
+            </div>
         </div>
         <div class="nav">
-            <a class="nav-item" href="../index.html">Home</a>
-            <a class="nav-item" href="#footer">Contact</a>
-            <a class="nav-item" href="./demo.html">Book Demo</a>         
-            <a class="nav-item" href="./about.html">About</a> 
-            <a class="nav-item" href="../index.html#faq-section">FAQ</a>
+            <a class="nav-item nav-item-last" href="./demo.html">Get a Demo</a>            
         </div>
         <i class="fa-solid fa-bars" id="menu-button"></i>
-        <!-- Hidden Menu-->
+
+        <!-- Hidden Menu -->
         <div id="menu">
-            <a class="menu-item" href="../index.html">Home</a>
-            <a class="menu-item" href="#footer">Contact</a>
-            <a class="menu-item" href="./demo.html">Book Demo</a>            
             <a class="menu-item" href="./about.html">About</a> 
-            <a class="nav-item" href="../index.html#faq-section">FAQ</a>
+            <a class="menu-item" href="../index.html#faq-section">FAQ</a>
+            <a class="menu-item" href="#footer">Contact</a>
+            <a class="menu-item" href="./demo.html">Get a Demo</a>            
         </div>
     </header>
+    
 
     <!-- Form Section -->
     <form class="demo" action="/submit" method="POST">

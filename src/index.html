@@ -25,71 +25,91 @@
     <script type="module" src="./global.js"></script>
 </head>
 <body>
+
+    
     <!-- Header -->
     <header>
-        <div class="branding-header">
-            <img class="logo" id="logo" alt="gloria logo" src="./images/logo.png">
+        <div class="branding branding-nav-flex">
+            <span class="logo" id="logo">
+                <img class="logo-img" alt="gloria logo" src="./images/logo.png">
+                <p class="logo-text">Gloria</p>
+            </span>
+            <div class="nav">
+                <a class="nav-item" href="./pages/about.html">About</a> 
+                <a class="nav-item" href="#faq-section">FAQ</a>
+                <a class="nav-item" href="#footer">Contact</a>
+            </div>
         </div>
         <div class="nav">
-            <a class="nav-item" href="#footer">Contact</a>
-            <a class="nav-item" href="./pages/demo.html">Book Demo</a>            
-            <a class="nav-item" href="./pages/about.html">About</a> 
-            <a class="nav-item" href="#faq-section">FAQ</a>
+            <a class="nav-item nav-item-last" href="./pages/demo.html">Get a Demo</a>            
         </div>
         <i class="fa-solid fa-bars" id="menu-button"></i>
+
         <!-- Hidden Menu -->
         <div id="menu">
-            <a class="menu-item" href="#footer">Contact</a>
-            <a class="menu-item" href="./pages/demo.html">Book Demo</a>            
             <a class="menu-item" href="./pages/about.html">About</a> 
             <a class="menu-item" href="#faq-section">FAQ</a>
+            <a class="menu-item" href="#footer">Contact</a>
+            <a class="menu-item" href="./pages/demo.html">Get a Demo</a>            
         </div>
     </header>
 
-    <div class="hero-features-flex">
+    <div class="hero-icon-flex">
+            
         <!-- Hero Section -->
-        <div class="hero-flex">
-            <section class="hero-section text-center">
-                <h1 class="hero-header">Gloria</h1>
-                <p>We’ve made connecting caregivers and family a breeze</p>
-                <button onclick="location.href='./pages/demo.html'">Book a Demo</button>
-            </section>
+        <div class="hero-section">
+            <h1>Stay Connected with Gloria</h1>
+            <p>We’ve made connecting caregivers and family a breeze</p>
+            <button onclick="location.href='./pages/demo.html'">Get a Demo</button>
         </div>
 
-        <i class="fa-solid fa-diagram-project center"></i>
-        
-        <!-- Features Section  -->
-        <div class="features-flex">
-            <section class="features-section">
-                <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Direct Messaging</p></span>
-                <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Daily Photos</p></span>
-                <span><i class="fa-regular fa-circle-check"></i><p class="technologies">User Checklists</p></span>
-                <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Caregiver Notes</p></span>
-                <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Peace of Mind</p></span>
-            </section>
+        <!-- Hero Icon Section -->
+        <div class="hero-icon-div">
+            <img src="./images/hero-icon.svg" class="hero-icon">
+            <div class="home">
+                <div class="home-text">Home</div>
+            </div>
+            <div class="resident">
+                <div class="resident-text">Resident</div>
+            </div>
+            <div class="family">
+                <div class="family-text">Family</div>
+            </div>
         </div>
+ 
     </div>
-
+        
+        
+    <!-- Features Section  -->
+    <div class="features-section">
+        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Direct Messaging</p></span>
+        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Daily Photos</p></span>
+        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Daily Summaries</p></span>
+        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Caregiver Notes</p></span>
+        <span><i class="fa-regular fa-circle-check"></i><p class="technologies">Peace of Mind</p></span>
+    </div>
+        
+        
     <!-- Photo Section -->
-<div class="photo-section">
-    <picture>
-        <!-- WebP format for browsers that support it -->
-        <source srcset="./images/care-image.webp" type="image/webp">
-        <!-- Fallback for browsers that do not support WebP -->
-        <img class="care-image" alt="elderly care image" src="./images/care-image.jpg" hidden>
-    </picture>
-    <picture>
-        <!-- WebP format for mobile images -->
-        <source srcset="./images/care-image-mobile.webp" type="image/webp">
-        <!-- Fallback for mobile images -->
-        <img class="care-image-mobile" alt="elderly care image" src="./images/care-image-mobile.jpg">
-    </picture>
-    <p class="photo-section-text">
-        We bridge the gap between home and family. Join the families and caregivers who trust Gloria to simplify communication and provide better care for their loved ones
-        <br><br>
-        <a href="./pages/demo.html">Join Us Today!</a>
-    </p>
-</div>
+    <div class="photo-section">
+        <picture>
+            <!-- WebP format for browsers that support it -->
+            <source srcset="./images/care-image.webp" type="image/webp"> 
+            <!-- Fallback for browsers that do not support WebP -->
+            <img class="care-image" alt="elderly care image" src="./images/care-image.jpg" hidden>
+        </picture>
+        <picture>
+            <!-- WebP format for mobile images -->
+            <source srcset="./images/care-image-mobile.webp" type="image/webp">
+            <!-- Fallback for mobile images -->
+            <img class="care-image-mobile" alt="elderly care image" src="./images/care-image-mobile.jpg">
+        </picture>
+        <p class="photo-section-text">
+            We bridge the gap between home and family. Join the families and caregivers who trust Gloria to simplify communication and provide better care for their loved ones
+            <br><br>
+            <a href="./pages/demo.html">Join Us Today!</a>
+        </p>
+    </div>
 
 
     <!-- FAQ Section  -->
@@ -128,6 +148,7 @@
         <hr/>
      </div>
 
+
     <!-- Footer -->
     <footer id="footer">
         <div class="contact">
@@ -146,5 +167,7 @@
             <p class="footer-item"><a href="./pages/policy.html">Privacy Policy</a></p>
         </div>
     </footer>    
+
+
 </body>   
 </html>
