@@ -288,10 +288,12 @@ margin-right: 0rem;
     background: linear-gradient(var(--color-3), var(--color-secondary));
     color: #FFFFFF;
     width: 50%;
+    font-weight: 600;
+    transition: filter 0.2s ease-in-out;
 }
 
 .hero-section button:hover {
-    opacity: 0.8;
+    filter: brightness(90%);
 }
 
 .hero-icon-div {
