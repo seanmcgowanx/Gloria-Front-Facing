@@ -409,7 +409,6 @@ margin-right: 0rem;
     font-size: 1.1em; /* Slightly increase font size for the link */
 }
 
-
 /* FAQ Section - Index.html */
 
 .faq-section {
@@ -469,7 +468,7 @@ margin-right: 0rem;
     gap: 2rem 5rem;
     width: 85%;
     margin: auto;
-    padding-top: 2rem;
+    padding-top: 3rem;
 }  
 
 .hero-section {
@@ -544,7 +543,7 @@ margin-right: 0rem;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.5rem 3rem;
-    padding: 3rem 0rem 2rem 0rem;
+    padding: 4rem;
     width: 85%;
     margin: auto;
 }
