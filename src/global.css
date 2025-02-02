@@ -306,13 +306,13 @@ footer {
 }
 
 .intro-section {
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 .hero {
     text-align: center;
     margin: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
 }
 
 .hero h1 {
