@@ -401,13 +401,12 @@ footer {
 }
 
 .features {
-    width: 100%;
     margin: auto;
     border: 2px solid rgba(0, 0, 0, 0.8);
     border-radius: 20px;
     background-color: white;
     box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.2);
-    margin: 2rem auto;
+    margin: 0 auto 2rem;
 }
 
 .features-flex {
@@ -442,7 +441,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 .features-description-item {
