@@ -266,7 +266,7 @@ header span {
 footer {
     height: 10rem;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: white;
     display: flex;
     justify-content: space-evenly;
     padding: 2rem 0;
@@ -299,9 +299,8 @@ footer {
 /* Intro Section - Index.html */
 
 .intro-background {
-    background-image: url('./images/bkkk.png');
-    background-size: contain;
-    background-position: 50% 40%;
+    background-image: url('./images/nebb.png');
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -447,7 +446,8 @@ footer {
 .features-description-item {
     height: 7rem;
     width: 100%;
-    border: 1px solid black;
+    background-color: rgba(34, 34, 34, 0.345);
+    border-radius: 10px;
 }
 
 /* Intro Section - Index.html - Desktop 1024 */
@@ -455,7 +455,7 @@ footer {
 @media (min-width: 1024px) {
 
     .intro-background {
-        background-size: cover;
+        /*background-size: cover;*/
     }
     
     .intro-section {
