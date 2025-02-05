@@ -309,7 +309,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 2rem calc(83.5px / 2);
+    padding: 0 2rem 7rem;
 }
 
 .hero h1 {
@@ -325,6 +325,7 @@ footer {
 
 .hero button {
     font-family: var(--font-primary);
+    color: var(--text-color);
     font-size: 1.1rem;
     background-color: transparent;
     border: 1px solid var(--color-secondary);
@@ -337,6 +338,12 @@ footer {
 }
 
 .hero button:hover {
+    background-color: var(--color-secondary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.hero button.active {
     background-color: var(--color-secondary);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;

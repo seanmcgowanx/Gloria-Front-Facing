@@ -1,5 +1,6 @@
 // Global Variables
 const menuButton = document.getElementById('menu-button');
+const heroButton = document.getElementById('hero-button')
 const menu = document.getElementById('menu');
 const questions = document.querySelectorAll(".question");
 const menuItems = document.querySelectorAll(".menu-item");
@@ -21,6 +22,10 @@ menuItems.forEach((item) => {
         menu.classList.toggle('visible'); // Toggle Menu when Menu Item is clicked
         logo.classList.toggle('fixed'); // Toggle fixed position of Logo when Menu Item is clicked
     })
+})
+
+heroButton.addEventListener("click", () => {
+  this.classList.add("active");
 })
 
 document.addEventListener('click', (event) => {
