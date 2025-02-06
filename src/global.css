@@ -334,19 +334,11 @@ footer {
     padding: 1.1rem;
     border-radius: 1rem;
     font-weight: 300;
-    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .hero button:hover {
-    background-color: var(--color-secondary);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: white;
-}
-
-.hero button.active {
-    background-color: var(--color-secondary);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .wireframe-flex {
@@ -788,12 +780,18 @@ footer {
 }
 
 .demo button {
-    padding: 0.5rem 3rem;
+    padding: 0.6rem 3rem;
     font-size: 16px;
-    background: linear-gradient(var(--color-3), var(--color-secondary));
+    background: linear-gradient(180deg, rgba(225, 117, 2, 0.9), rgba(237, 57, 25, 0.9));
+    border-radius: 1rem;
     color: #FFFFFF;
     display: block;
     margin: 1rem auto;
+    transition: box-shadow 0.3s ease;
+}
+
+.demo button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .demo .terms {
