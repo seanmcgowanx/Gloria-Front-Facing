@@ -356,7 +356,7 @@ footer {
 }
 
 .tablet-frame-div {
-    width: 150px;
+    width: 130px;
 }
 
 .mobile-frame-div {
@@ -402,18 +402,19 @@ footer {
 
     .hero-wireframe-flex {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         gap: 3rem  7rem;
         flex-wrap: wrap;
-        padding: 0 3rem;
+        width: 85%;
+        margin: 0 auto 5rem;
     }
 
     .hero {
         height: auto;
         display: flex;
         align-items: center;
-        padding: 0;
+        padding: 3rem 0;
     }
     
     .hero h1 {
@@ -432,6 +433,14 @@ footer {
         padding: 1rem 5rem;
         width: auto;
     }
+    
+    .tablet-frame-div {
+        transform: scale(1.1);
+    }
+    
+    .mobile-frame-div {
+        transform: scale(1.1);
+    }
 
     .features {
         flex-direction: row;
@@ -439,10 +448,12 @@ footer {
         flex-wrap: wrap;
         padding: 0 3rem;
         margin: 0 auto;
+        border: 1px solid grey;
+        width: 85%;
     }
     
     .features-item {
-        height: 12rem;
+        height: 10rem;
         width: 20rem;
         padding: 0;
     }
