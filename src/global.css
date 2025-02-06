@@ -373,8 +373,8 @@ footer {
 .features-item {
     height: 10rem;
     width: 100%;
-    background-color: rgba(34, 34, 34, 0.65);
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid grey;
 }
 
 /* Intro Section - Index.html - Desktop 1024 */
@@ -393,7 +393,7 @@ footer {
     
     .intro-section {
         min-height: calc(100vh - 85.5px);
-        padding: 0;
+        padding: 2rem 0;
         margin: auto;
         display: flex;
         flex-direction: column;
