@@ -433,13 +433,21 @@ footer {
         padding: 1rem 5rem;
         width: auto;
     }
+
+    #tablet-frame {
+        width: 220px;
+    }
+    
+    #mobile-frame {
+        width: 110px;
+    }
     
     .tablet-frame-div {
-        transform: scale(1.1);
+        width: 140px;
     }
     
     .mobile-frame-div {
-        transform: scale(1.1);
+        width: 110px;
     }
 
     .features {
