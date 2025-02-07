@@ -367,14 +367,12 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding: 4rem 0 1rem 1rem;
+    padding: 4rem 0 3rem 1rem;
 }
 
 .features-item {
     height: 10rem;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
-    /*border: 1px solid grey;*/
     position: relative;
 }
 
@@ -430,7 +428,7 @@ footer {
     
     .intro-section {
         min-height: calc(100vh - 85.5px);
-        padding: 7rem 0 3rem;
+        padding: 6rem 0 3rem;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -489,6 +487,11 @@ footer {
 
     .features-item {
         width: 24rem;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .features-item::before {
+        height: 0px;
     }
 
     .features {
@@ -497,7 +500,6 @@ footer {
         flex-wrap: wrap;
         padding: 0 3rem;
         margin: 0 auto;
-        /*border: 1px solid grey;*/
         width: 85%;
     }
 
@@ -553,8 +555,7 @@ footer {
 /* FAQ Section - Index.html */
 
 .faq-section {
-    padding: 3rem 1rem;
-    margin-bottom: 3rem;
+    padding: 4rem 1rem;
 }
   
 .faq-header {
@@ -623,7 +624,7 @@ footer {
 
 .faq-section {
     max-width: 950px;
-    padding: 5rem 0 7rem 0;
+    padding: 6rem 0;
     margin: auto;
     font-size: 1.1rem;
 }
