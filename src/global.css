@@ -184,32 +184,6 @@ header span {
     opacity: 0.9;
 }
 
-#menu {
-  width: 75%;
-  background-color: #F3F0F0;
-  position: fixed;
-  top: 0;
-  left: -100%; /* Initially hidden */
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
-  height: 100%;
-  transition: left 0.75s ease; 
-  border-radius: 0px 5px 5px 0;
-  z-index: 1;
-  padding: 7rem 0 0 2rem
-}
-
-.menu-item {
-    font-size: 1.1rem;
-    font-weight: 500;
-    display: block;
-    margin-bottom: 2.5rem;
-}
-
-#menu.visible {
-  left: 0; /* Slides into frame */
-}
-
 /* Header - Global - Mobile Landscape */
 
 @media screen and (max-height: 500px) and (orientation: landscape) {
