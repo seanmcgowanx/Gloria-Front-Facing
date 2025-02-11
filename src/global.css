@@ -214,7 +214,7 @@ header span {
 
 @media screen and (max-height: 500px) and (orientation: landscape) {
     #menu {
-        padding-left: 5vw;
+        padding-left: 8vw;
     }
 }
 
@@ -425,23 +425,25 @@ footer {
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .mobile-background {
         background-size: cover;
-        background-position: 50% 50%;
+        background-position: 50% 60%;
     }
 
     .hero {
         padding: 8rem 5vw;
+        text-align: center;
     }
 
-    .hero h1, .hero p {
-        padding-right: 30vw;
+    .hero h1 {
+        padding: 0;
     }
 
     .hero button {
-        width: 80vw;
+        width: 50vw;
+        margin: auto;
     }
 
     .wireframe-flex {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 
     .features {
@@ -721,6 +723,10 @@ footer {
     .policy-section {
         padding: 5rem 5vw;
     }
+    
+    .policy-section h1 {
+        text-align: center;
+    }
 }
 
 /* Policy Section - Policy.html - Desktop 1024 */
@@ -804,6 +810,10 @@ footer {
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .about-section {
         padding: 5rem 5vw;
+    }
+
+    .about-section-header {
+        text-align: center;
     }
 }
 
@@ -953,6 +963,10 @@ select.error {
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .demo {
         padding: 5rem 5vw;
+    }
+
+    .demo h1, .demo-subtitle {
+        text-align: center;
     }
 }
 
