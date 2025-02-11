@@ -936,7 +936,7 @@ select.error {
 
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .demo {
-        padding: 5rem 5vw;
+        padding: 5rem 20vw;
     }
 
     .demo h1, .demo-subtitle {
