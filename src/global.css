@@ -1,93 +1,93 @@
 /************************************** SETUP **************************************/
 
 :root {
-    --font-primary: 'Inter', sans-serif;
-    --font-secondary: "Comfortaa", serif;
-    --color-primary: #333;
-    --color-secondary: #FF3C00;
-    --color-3: #FF7400;
-    --text-color: #333;
-  }
+--font-primary: 'Inter', sans-serif;
+--font-secondary: "Comfortaa", serif;
+--color-primary: #333;
+--color-secondary: #FF3C00;
+--color-3: #FF7400;
+--text-color: #333;
+}
   
 /*** Reset - Setup ***/
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-    
-  html {
-    font-size: 16px; 
-    scroll-behavior: smooth;  
-    height: 100%;
-  }
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+font-size: 16px; 
+scroll-behavior: smooth;  
+height: 100%;
+}
   
 /*** Element Styles - Setup ***/
 
-  body {
-    font-family: var(--font-primary);
-    color: var(--text-color);  
-    background-color: #FAFAFA;
-    max-width: 100vw;
-  }
-    
-  a {
-    color: var(--text-color);
-    text-decoration: none;
-    cursor: pointer;
-  }
+body {
+font-family: var(--font-primary);
+color: var(--text-color);  
+background-color: #FAFAFA;
+max-width: 100vw;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-secondary); 
-    margin-bottom: 1rem;
-  }
-  
-  hr {
-    opacity: .4;
-  }
-  
-  button {
-    border: none;
-    cursor: pointer;
-  }
-  
-  span {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
+a {
+color: var(--text-color);
+text-decoration: none;
+cursor: pointer;
+}
 
-  ul {
-    list-style-type: disc; 
-    margin-left: 20px; 
+h1, h2, h3, h4, h5, h6 {
+font-family: var(--font-secondary); 
+margin-bottom: 1rem;
+}
+
+hr {
+opacity: .4;
+}
+
+button {
+border: none;
+cursor: pointer;
+}
+
+span {
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+ul {
+list-style-type: disc; 
+margin-left: 20px; 
 }
 
 /*** Utility Classes - Setup ***/
 
-  .text-center {
-      text-align: center;
-    }
-    
-  .text-bold {
-      font-weight: bold;
-    }
-    
-  .hidden {
-      display: none;
-    }
-    
-  .h-1 {
-        height: 1rem;
-    } 
-  
-  .h-2 {
-      height: 2rem;
-    }
+.text-center {
+    text-align: center;
+}
 
-  .indent {
-    text-indent: 50px;
-  }
+.text-bold {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.h-1 {
+    height: 1rem;
+} 
+
+.h-2 {
+    height: 2rem;
+}
+
+.indent {
+text-indent: 50px;
+}
 
 /*********************************** GLOBAL STYLES *********************************/
 
@@ -210,6 +210,14 @@ header span {
   left: 0; /* Slides into frame */
 }
 
+/* Header - Global - Mobile Landscape */
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    #menu {
+        padding-left: 5vw;
+    }
+}
+
 /*** Header - Global - Desktop 1024 ***/
 
 @media (min-width: 1024px) {
@@ -248,7 +256,7 @@ header span {
         transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
         font-weight: 500;
     }
-    
+
     .nav-item-last:hover {
         background-color: rgba(34, 34, 34, 0.8);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -412,6 +420,35 @@ footer {
     font-family: var(--font-primary);
 }
 
+/* Intro Section - Index.html - Mobile Landscape */
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .mobile-background {
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .hero {
+        padding: 8rem 5vw;
+    }
+
+    .hero h1, .hero p {
+        padding-right: 30vw;
+    }
+
+    .hero button {
+        width: 80vw;
+    }
+
+    .wireframe-flex {
+        margin-top: 2rem;
+    }
+
+    .features {
+        padding: 4rem 5vw 3rem;
+    }
+}
+
 /* Intro Section - Index.html - Desktop 1024 */
 
 @media (min-width: 1024px) {
@@ -514,13 +551,11 @@ footer {
 
 }
 
-
-/******************************************************************************************************************************************/
-
-/* Photo Section - Index.html */
+/* Image Section - Index.html */
 
 .image-section {
     position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 }
 
 .care-image-mobile {
@@ -552,14 +587,46 @@ footer {
     font-size: 1.1em; /* Slightly increase font size for the link */
 }
 
+/* Image Section - Index.html - Mobile Landscape */
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .image-section-text {
+        left: 5vw;
+    }
+}
+
+/* Image Section - Index.html - Desktop 1024 */
+
+@media (min-width: 1024px) {
+    
+    .care-image-mobile {
+        display: none;
+    }
+    
+    .care-image {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .image-section-text {
+        font-size: clamp(1.3rem, 2vw, 1.5rem);
+        left: 10%;
+        padding: 4rem 2rem;
+        width: 30%;
+    }
+}
+
 /* FAQ Section - Index.html */
 
 .faq-section {
-    padding: 4rem 1rem;
+    padding: 6rem 1rem 5rem;
+    background-color: rgba(255, 166, 0, 0.066);
+    clip-path: polygon(0 4%, 100% 9%, 100% 100%, 0 100%);
 }
   
 .faq-header {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
     font-weight: 500;
@@ -597,55 +664,39 @@ footer {
     text-decoration: underline;
 }
 
-/* MEDIA QUERIES - INDEX.HTML */
+/* FAQ Section - Index.html - Mobile Landscape */
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .faq-section {
+        padding: 6rem 5vw 5rem;
+    }
+}
+
+/* FAQ Section - Index.html - Desktop 1024 */
 
 @media (min-width: 1024px) {
 
-/* Photo Section - Index.html - Desktop 1024 */
-
-.care-image-mobile {
-    display: none;
-}
-
-.care-image {
-    width: 100%;
-    display: block;
-    margin: auto;
-}
-
-.image-section-text {
-    font-size: clamp(1.3rem, 2vw, 1.5rem);
-    left: 10%;
-    padding: 4rem 2rem;
-    width: 30%;
-}
-
-/* FAQ Section - Index.html -Desktop 1024 */
-
-.faq-section {
-    max-width: 950px;
-    padding: 6rem 0;
-    margin: auto;
-    font-size: 1.1rem;
-}
-
-.faq-header {
-    margin-bottom: 2rem;
-}
+    .faq-section {
+        width: 100%;
+        margin: auto;
+        padding: 10rem 20% 5rem;
+        font-size: 1.1rem;
+        clip-path: polygon(0 8%, 100% 16%, 100% 100%, 0 100%);
+    }
 
 }  
 
-/*** POLICY.HTML STYLES ***/
+
+/**************************************** POLICY.HTML STYLES **********************************************/
 
 /* Policy Section - Policy.html */
 
 .policy-section {
-    padding: 1rem 2rem 5rem 2rem;
+    padding: 5rem 2rem;
 }
 
 .policy-section h1 {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -664,22 +715,25 @@ footer {
     text-decoration: underline;
 }
 
-/* MEDIA QUERIES - POLICY.HTML */
+/* Policy Section - Policy.html - Mobile Landscape */
 
-@media (min-width: 1024px) {
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .policy-section {
+        padding: 5rem 5vw;
+    }
+}
 
 /* Policy Section - Policy.html - Desktop 1024 */
 
+@media (min-width: 1024px) {
+
 .policy-section {
-    width: 60%;
-    min-width: 50rem;
-    max-width: 70rem;
+    width: 60rem;
     margin: auto;
-    padding-top: 3rem;
 }
 
 .policy-section h1 {
-    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .policy-text {
@@ -687,48 +741,46 @@ footer {
 }
 }
 
-/*** ABOUT.HTML STYLES ***/
 
-.about-section-header {
-    text-align: center;
-    font-size: 1.5rem;
+/************************************** ABOUT.HTML STYLES ****************************************/
+
+/* About Section - About.html */
+
+.about-section {
+    padding: 5rem 2rem;
 }
 
-/* Our Story Section - About.html */
-
-.our-story-section {
-    padding: 1rem 0;
+.about-section-header {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .our-story-text {
-    padding: 1rem 2rem;
-    line-height: 1.5;
     font-weight: 300;
+    line-height: 1.5;
 }
 
-/* Our Team Section - About.html */
-
 .our-team-section {
-    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
 .team-member {
     text-align: center;
     padding: 1rem 0;
+    margin: 0 auto;
 }
 
 .team-member-flex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: auto;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 0 2rem;
+    
 }
 
 .avatar {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin: auto;
@@ -739,69 +791,72 @@ footer {
     font-weight: 500;
 }
 
-.title {
+.creds {
+    width: 130px;
     font-weight: 300;
     margin-top: 5px;
     font-size: 0.8em;
+    margin: auto;
 }
 
-/* MEDIA QUERIES - ABOUT.HTML */
+/* About Section - About.html - Mobile Landscape */
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .about-section {
+        padding: 5rem 5vw;
+    }
+}
+
+/* About Section - About.html - Desktop 1024 */
 
 @media (min-width: 1024px) {
 
-/* Our Story Section - Desktop 1024 */    
+    .about-section-header {
+        text-align: center;
+    }
 
-.our-story-section {
-    padding: 3rem 0;
+    .our-story-text {
+        width: 60rem;
+        margin: auto;
+        line-height: 2.0;
+        font-size: 1.2rem;
+    }
+
+    .our-team-section h1 {
+        margin-bottom: 3rem;
+    }
+
+    .team-member-flex {
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        gap: 0 4rem;
+    }
+
+    .avatar {
+        height: 200px;
+        width: 200px;
+    }
 }
 
-.our-story-text {
-    max-width: 60rem;
-    margin: auto;
-    line-height: 2.0;
-    font-size: 1.2rem;
-}
 
-/* Our Team Section - Desktop 1024 */
-
-.team-member-flex {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
-}
-
-.team-member {
-    padding: 2rem;
-}
-
-.avatar {
-    height: 200px;
-    width: 200px;
-}
-}
-
-/***  DEMO.HTML STYLES ***/
+/***************************************  DEMO.HTML STYLES *************************************************/
 
 /* Form Section - Demo.html */
 
 .demo {
     margin: 0 auto;
-    padding: 1rem 2rem 4rem 2rem;
+    padding: 5rem 2rem;
 }
 
 .demo h1 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
-.demo p {
-    text-align: center;
-    font-size: 1rem;
+.demo-subtitle {
+    font-size: 1.2rem;
     color: #555;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .demo label {
@@ -893,51 +948,61 @@ select.error {
     font-size: 12px;
 }
 
-/* MEDIA QUERIES - DEMO.HTML */
+/* Form Section - Demo.html - Mobile Landscape */
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .demo {
+        padding: 5rem 5vw;
+    }
+}
 
 /* Form Section - Demo.HTML - Desktop 1024 */
 
 @media (min-width: 1024px) {
 
-.demo {
-    max-width: 50rem;
-    border-radius: 30px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-    margin: 2rem auto 4rem auto;
-}
+    .demo {
+        max-width: 50rem;
+        border-radius: 30px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        margin: 2rem auto 4rem auto;
+    }
 
-.demo-form-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0rem 1rem;
-    max-width: 45rem;
-    margin: auto;
-    padding: 1rem;
-}
+    .demo h1, .demo-subtitle {
+        text-align: center;
+    }
 
-.demo-flex-item {
-    flex: 1 1 calc(50% - 1rem); /* Flex-basis for half-width items */
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem; 
-}
+    .demo-form-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0rem 1rem;
+        max-width: 45rem;
+        margin: auto;
+        padding: 1rem;
+    }
 
-.demo-flex-item.full-width {
-    flex: 1 1 100%; /* Full-width elements */
-}
+    .demo-flex-item {
+        flex: 1 1 calc(50% - 1rem); /* Flex-basis for half-width items */
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem; 
+    }
 
-.demo input, .demo select {
-    width: 100%;
-}
+    .demo-flex-item.full-width {
+        flex: 1 1 100%; /* Full-width elements */
+    }
 
-.full-width {
-    width: 100%;
-}
+    .demo input, .demo select {
+        width: 100%;
+    }
 
-.error-message {
-    font-size: 14px;
-    top: 84px;
-}
+    .full-width {
+        width: 100%;
+    }
+
+    .error-message {
+        font-size: 14px;
+        top: 84px;
+    }
 }
