@@ -190,7 +190,7 @@ header span {
 @media screen and (max-height: 500px) and (orientation: landscape) {
     #menu {
         padding-left: 8vw;
-        width: 40%;
+        width: 50%;
     }
 
     header {
@@ -797,7 +797,6 @@ footer {
     }
 
     .our-story-text {
-        line-height: 2.0;
         font-size: 1.1rem;
     }
 }
