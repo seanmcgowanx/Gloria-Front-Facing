@@ -191,6 +191,10 @@ header span {
     #menu {
         padding-left: 8vw;
     }
+
+    header {
+        padding: 2rem 8vw 1rem;
+      }
 }
 
 /*** Header - Global - Desktop 1024 ***/
@@ -645,7 +649,7 @@ footer {
 
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .faq-section {
-        padding: 6rem 5vw 5rem;
+        padding: 6rem 10vw 5rem;
     }
 }
 
@@ -696,7 +700,7 @@ footer {
 
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .policy-section {
-        padding: 5rem 5vw;
+        padding: 5rem 12vw;
     }
     
     .policy-section h1 {
@@ -784,11 +788,16 @@ footer {
 
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .about-section {
-        padding: 5rem 5vw;
+        padding: 5rem 12vw;
     }
 
     .about-section-header {
         text-align: center;
+    }
+
+    .our-story-text {
+        line-height: 2.0;
+        font-size: 1.1rem;
     }
 }
 
