@@ -285,6 +285,10 @@ footer {
 
 /* Intro Section - Index.html */
 
+.white-background {
+    background-color: white;
+}
+
 .mobile-background {
     background-image: url('./images/background.webp'), url('./images/background.png');
     background-size: contain;
