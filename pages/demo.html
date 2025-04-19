@@ -55,7 +55,15 @@
 
 
     <!-- Form Section -->
-    <form class="demo" action="/submit" method="POST">
+    <form class="demo" action="https://formsubmit.co/sean@gloriatech.co" method="POST" >
+
+        <!-- Hidden redirect input -->
+        <input type="hidden" name="_next" value="https://gloriatech.netlify.app/pages/demo-confirmation">
+        <!-- Hidden disable spam protection -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Hidden message template style -->     
+        <input type="hidden" name="_template" value="table">
+
         <h1>See Gloria in Action</h1>
         <p class="demo-subtitle">We'd love to offer your clients peace of mind</p>
         <div class="demo-form-flex">
