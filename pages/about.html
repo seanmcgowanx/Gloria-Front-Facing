@@ -59,7 +59,7 @@
     <div class="our-story-section">
         <h1 class="about-section-header">Our Story</h1>
         <p class="our-story-text">
-            We created Gloria to address the communication gap between caregivers and families, recognizing the lack of an efficient and straightforward way for families to stay updated on their loved ones' care while in a care facility. Inspired by our personal experiences in caring for elderly family members and friends, we saw firsthand how challenging and inefficient communication can be
+            We created Gloria to address the communication gap between caregivers and families, recognizing the lack of an efficient and straightforward way for families to stay updated on their loved ones' care while in a care facility. Inspired by our personal experiences in caring for elderly family members and friends, we saw firsthand how challenging and inefficient communication can be.
             <br><br>
             Gloria was developed to solve this problem, aiming to streamline communication and make the care process more transparent, cohesive, and effective for patients, families, and caregivers alike. Our solution ensures that families are kept informed and engaged, ultimately enhancing the quality of care and peace of mind for all parties involved.
         </p>
@@ -71,7 +71,12 @@
         <div class="team-member-flex">
 
             <div class="team-member">
-                <div class="avatar"></div>
+                <picture>
+                    <!-- WebP format for browsers that support it -->
+                    <source srcset="../images/dave.webp" type="image/webp">
+                    <!-- Fallback to .jpg for browsers that don't support WebP -->
+                    <img class="avatar" alt="Dave Vacchio" src="../images/dave.jpg">
+                </picture>
                 <p class="name">David Vacchio</p>
                 <p class="creds">CEO</p>
             </div>
@@ -120,17 +125,17 @@
             <p class="footer-title">Contact</p>
             <span class="footer-item">
                 <i class="fa-solid fa-phone"></i>
-                <p><a href="tel:+15624470935">(562)-447-0935</a></p>
+                <p><a href="tel:+15555555555">(555)-555-5555</a></p>
             </span>
             <span class="footer-item">
                 <i class="fa-solid fa-envelope"></i>
-                <p><a href="mailto:info@gloria.io">info@gloria.io</a></p>
+                <p><a href="mailto:dave@gloriatech.co">dave@gloriatech.co</a></p>
             </span>
         </div>
         <div class="our-company">
             <p class="footer-title">Our Company</p>
-            <p class="footer-item"><a href="./policy.html">Privacy Policy</a></p>
+            <p class="footer-item"><a href="./pages/policy.html">Privacy Policy</a></p>
         </div>
-    </footer>    
+    </footer>      
 </body>   
 </html>
