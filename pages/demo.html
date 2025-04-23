@@ -68,34 +68,34 @@
         <p class="demo-subtitle">We'd love to offer your clients peace of mind</p>
         <div class="demo-form-flex">
             <div class="demo-flex-item">
-                <label for="first-name" id="first-name-label">First name *</label>
+                <label for="name" id="name-label">Name *</label>
                 <div class="error-message" ></div>
                 <input 
                     class="form-control" 
                     type="text" 
-                    id="first-name" 
-                    name="first-name" 
-                    placeholder="Enter your first name" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Enter your name" 
                     aria-required="true" 
-                    aria-labelledby="first-name-label" 
-                    title="Please enter your first name."
+                    aria-labelledby="name-label" 
+                    title="Please enter your name."
                     required 
                 />
             </div>
             <div class="demo-flex-item">
-                <label for="last-name" id="last-name-label">Last name *</label>
+                <label for="phone-number" id="phone-number-label">Phone number</label>
                 <input 
                     class="form-control"
-                    type="text" 
-                    id="last-name" 
-                    name="last-name" 
-                    placeholder="Enter your last name" 
-                    aria-required="true" 
-                    aria-labelledby="last-name-label"
-                    required
+                    type="tel" 
+                    id="phone-number" 
+                    name="phone-number" 
+                    placeholder="Enter your phone number" 
+                    aria-required="false" 
+                    aria-labelledby="phone-number-label"
+                    pattern="[0-9]{10,15}"
                 />
-                <div class="error-message" ></div>
-            </div>
+                <div class="error-message"></div>
+            </div>            
             <div class="demo-flex-item">
                 <label for="email" id="email-label">Business Email *</label>
                 <input 
@@ -131,16 +131,21 @@
             </div>
             <div class="demo-flex-item full-width">
                 <label for="hear-about" id="hear-about-label">How did you hear about us? *</label>
-                <input 
+                <select 
                     class="form-control"
-                    type="text" 
                     id="hear-about" 
                     name="hear-about" 
                     aria-required="true" 
                     aria-labelledby="hear-about-label" 
-                    required 
-                />
-                <div class="error-message" ></div>
+                    required
+                >
+                    <option value="" disabled selected>Select how you heard about us</option>
+                    <option value="Word of Mouth">Word of Mouth</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div class="error-message"></div>
             </div>
             <div class="demo-flex-item full-width">
                 <label for="help-you" id="help-you-label">How can we help you?</label>
@@ -162,16 +167,12 @@
         <div class="contact">
             <p class="footer-title">Contact</p>
             <span class="footer-item">
-                <i class="fa-solid fa-phone"></i>
-                <p><a href="tel:+15555555555">(555)-555-5555</a></p>
-            </span>
-            <span class="footer-item">
                 <i class="fa-solid fa-envelope"></i>
                 <p><a href="mailto:dave@gloriatech.co">dave@gloriatech.co</a></p>
             </span>
         </div>
         <div class="our-company">
-            <p class="footer-title">Our Company</p>
+            <p class="footer-title">Company</p>
             <p class="footer-item"><a href="./pages/policy.html">Privacy Policy</a></p>
         </div>
     </footer>      
