@@ -17,9 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!--Stylesheet-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="/global.css">
     <!--Script-->
-    <script type="module" src="../global.js"></script>
+    <script type="module" src="/global.js"></script>
 </head>
 <body>
    
@@ -27,29 +27,29 @@
     <!-- Header -->
     <header>
         <div class="branding branding-nav-flex">
-            <a href="../index.html" class="logo" id="logo">
+            <a href="/index.html" class="logo" id="logo">
                 <span>
-                    <img class="logo-img" alt="gloria logo" src="../images/logo.png">
+                    <img class="logo-img" alt="gloria logo" src="/images/logo.png">
                     <p class="logo-text">Gloria</p>
                 </span>
             </a>
             <div class="nav">
-                <a class="nav-item" href="./about.html">About</a> 
-                <a class="nav-item" href="#footer">Contact</a>
-                <a class="nav-item" href="../index.html#faq-section">FAQ</a>
+                <a class="nav-item" href="/about/index.html">About</a> 
+                <a class="nav-item" href="#contact">Contact</a>
+                <a class="nav-item" href="/index.html#faq">FAQ</a>
             </div>
         </div>
         <div class="nav">
-            <a class="nav-item-last" href="./demo.html">Get a Demo</a>            
+            <a class="nav-item-last" href="/demo/index.html">Get a Demo</a>            
         </div>
         <i class="fa-solid fa-bars" id="menu-button"></i>
 
         <!-- Hidden Menu -->
         <div id="menu">
-            <a class="menu-item" href="./about.html">About</a> 
-            <a class="menu-item" href="#footer">Contact</a>  
-            <a class="menu-item" href="./demo.html">Get a Demo</a>
-            <a class="menu-item" href="../index.html#faq-section">FAQ</a>             
+            <a class="menu-item" href="/about/index.html">About</a> 
+            <a class="menu-item" href="#contact">Contact</a>  
+            <a class="menu-item" href="/demo/index.html">Get a Demo</a>
+            <a class="menu-item" href="/index.html#faq">FAQ</a>             
         </div>
     </header>
 
@@ -58,7 +58,7 @@
     <form class="demo" action="https://formsubmit.co/dave@gloriatech.co" method="POST" >
 
         <!-- Hidden redirect input -->
-        <input type="hidden" name="_next" value="https://gloriatech.netlify.app/pages/demo-confirmation">
+        <input type="hidden" name="_next" value="https://gloriatech.netlify.app/demo/confirmation">
         <!-- Hidden disable spam protection -->
         <input type="hidden" name="_captcha" value="false">
         <!-- Hidden message template style -->     
@@ -92,7 +92,7 @@
                     placeholder="Enter your phone number" 
                     aria-required="false" 
                     aria-labelledby="phone-number-label"
-                    pattern="[\d\s\-\(\)]{10,15}"
+                    pattern="^\s*\+?\s*(\d[\s\-\(\)\.]{0,2}){10,15}(ext\.?|x|#)?\s*\d{0,5}\s*$"
                 />
                 <div class="error-message"></div>
             </div>            
@@ -148,7 +148,7 @@
                 <div class="error-message"></div>
             </div>
             <div class="demo-flex-item full-width">
-                <label for="help-you" id="help-you-label">How can we help you?</label>
+                <label for="help-you" id="help-you-label">Additional Notes</label>
                 <input type="text" id="help-you" name="help-you" 
                        aria-labelledby="help-you-label" />
             </div>
@@ -156,14 +156,14 @@
         <button type="submit" id="submit" aria-label="Submit Form">Submit</button>
         <p class="terms">
             By clicking Submit, you agree to our
-            <a href="./policy.html"><u>Privacy Policy</u></a>.
+            <a href="/policy/index.html"><u>Privacy Policy</u></a>.
         </p>
     </form>
 
 
     
     <!-- Footer -->
-    <footer id="footer">
+    <footer id="contact">
         <div class="contact">
             <p class="footer-title">Contact</p>
             <span class="footer-item">
@@ -173,7 +173,7 @@
         </div>
         <div class="our-company">
             <p class="footer-title">Company</p>
-            <p class="footer-item"><a href="./pages/policy.html">Privacy Policy</a></p>
+            <p class="footer-item"><a href="/policy/index.html">Privacy Policy</a></p>
         </div>
     </footer>      
 </body>   
